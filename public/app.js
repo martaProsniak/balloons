@@ -8,8 +8,8 @@ document.addEventListener("DOMContentLoaded", () => {
         const centerY = window.innerHeight / 2;
 
         elements.forEach(element => {
-            const ratioX = element.getAttribute('ratioX');
-            const ratioY = element.getAttribute('ratioY');
+            const ratioX = -element.getAttribute('ratioX');
+            const ratioY = -element.getAttribute('ratioY');
 
             const moveX = clientX - centerX
             const moveY = clientY - centerY
